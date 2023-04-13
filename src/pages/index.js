@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import { useUser } from '@auth0/nextjs-auth0/client'
 import styles from '@/styles/Home.module.css'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -38,9 +39,9 @@ export default function Home() {
             </a>
           </div>
           <div>
-            <a href='/api/auth/logout'>
+            <Link href='/api/auth/logout'>
               <p>{user.name}</p>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -170,7 +171,7 @@ export default function Home() {
         </div>
 
         <div>
-          <a href="/api/auth/login" className={styles.card}>Login</a>
+          <Link href="/api/auth/login" className={styles.card}>Login</Link>
         </div>
 
         <p>copyright @ 2023</p>
