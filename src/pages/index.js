@@ -141,7 +141,7 @@ export default function Home() {
             </p>
           </a>
         </div>
-        <p>copyright @ 2023</p>
+        <p>travelPesa @ 2023</p>
       </main>
     </>
    )
@@ -174,7 +174,7 @@ export default function Home() {
           <Link href="/api/auth/login" className={styles.card}>Login</Link>
         </div>
 
-        <p>copyright @ 2023</p>
+        <p>travelPesa @ 2023</p>
 
       </main>
     )
